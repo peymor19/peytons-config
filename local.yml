@@ -14,7 +14,7 @@
   tags: base
   become: true
   roles:
-    - linux-general-setup
+    - base
 
 # end of run cleanup and reporting
 - hosts: PeytonsHost

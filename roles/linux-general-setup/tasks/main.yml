@@ -1,0 +1,15 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+
+- name: install delta RPMs support
+  yum:
+    name: 'deltarpm'
+    state: latest
+  become: true
+
+- name: upgrade all packages
+  yum:
+    name: '*'
+    state: latest                                                                                                                                         
+  become: true
+

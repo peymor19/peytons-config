@@ -20,13 +20,6 @@
 - hosts: PeytonsHost
   become: true
   tasks:
-  - name: cleanup package cache (fedora)
-    tags: always
-    yum:
-      autoclean: yes
-      changed_when: false
-    when: ansible_distribution in ["Fedora"]
-
   - name: autoremove orphan packages (fedora)
     tags: always
     yum:

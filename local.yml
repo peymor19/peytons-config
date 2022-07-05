@@ -24,5 +24,4 @@
     tags: always
     yum:
       autoremove: yes
-      purge: yes
     when: ansible_distribution in ["Fedora"]

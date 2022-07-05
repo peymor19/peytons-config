@@ -1,5 +1,6 @@
 # tasks to complete before running roles
-- tags: always
+- hosts: PeytonsHost
+  tags: always
   become: true
   pre_tasks:
     - name: pre-run | update package cache (fedora)
@@ -9,13 +10,15 @@
       when: ansible_distribution == "Fedora"
 
 # run roles
-- tags: base
+- hosts: PeytonsHost
+  tags: base
   become: true
   roles:
     - linux-general-setup
 
 # end of run cleanup and reporting
-- become: true
+- hosts: PeytonsHost
+  become: true
   tasks:
   - name: cleanup package cache (fedora)
     tags: always

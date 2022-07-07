@@ -6,25 +6,25 @@
       - at
       - colordiff
       - curl
-      - "{{ dns_utils_package }}"
+      -  dnsutils
       - htop
       - iotop
-      - "{{ lm_sensors_package }}"
+      - lm-sensors
       - lsof
       - mc
       - mosh
       - ncdu
       - neofetch
-      - "{{ nfs_client_package }}"
+      - nfs-common
       - nmap
       - ranger
-      - "{{ rename_package }}"
+      - rename
       - rsync
       - screen
       - sshfs
       - tmux
       - traceroute
-      - "{{ vim_package }}"
+      - vim
       - wget
       - whois
       - fish

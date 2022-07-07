@@ -2,10 +2,7 @@
   tags: dev,development,packages,python,ruby
   package:
     name:
-      - fabric
-      - flake8
       - git
       - perl
       - ruby
-      - tig
     state: latest

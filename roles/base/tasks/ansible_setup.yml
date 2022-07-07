@@ -8,7 +8,6 @@
   tags: ansible,ansible-setup,packages
   package:
     name:
-      - dconf-cli
       - python-psutil
 
 - name: ansible setup | remove default ansible directory (/etc/ansible) from host
